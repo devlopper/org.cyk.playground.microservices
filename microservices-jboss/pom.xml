@@ -1,23 +1,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+  	<groupId>org.cyk.pom.base</groupId>
+  	<artifactId>pom-base</artifactId>
+  	<version>pom.base.0.0.1</version>
+  </parent>
+  
   <groupId>org.cyk.playground.microservices.jboss</groupId>
   <artifactId>microservices-jboss</artifactId>
   <packaging>war</packaging>
   <version>0.0.1</version>
   <name>microservices-jboss Maven Webapp</name>
   <url>http://maven.apache.org</url>
-  
-  <properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
-		<failOnMissingWebXml>false</failOnMissingWebXml>
-		<java.ee.api.version>7.0</java.ee.api.version>
-		<version.wildfly.swarm>1.0.0.Final</version.wildfly.swarm>
-		<junit.version>4.8.1</junit.version>
-	</properties>
-  
+   
   <build>
 		<plugins>
 			<plugin>
@@ -47,18 +44,6 @@
 		<finalName>microservices-jboss</finalName>
 	</build>
   
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>org.wildfly.swarm</groupId>
-        <artifactId>bom</artifactId>
-        <version>${version.wildfly.swarm}</version>
-        <scope>import</scope>
-        <type>pom</type>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
-  
   <dependencies>
    	<!-- Java EE 7 dependency -->
     <dependency>
@@ -76,9 +61,9 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
 
+  
 </project>
