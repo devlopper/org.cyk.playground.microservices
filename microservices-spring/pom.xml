@@ -3,9 +3,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<parent>
-		<groupId>org.cyk.pom.base</groupId>
-		<artifactId>pom-base</artifactId>
-		<version>pom.base.0.0.1</version>
+		<groupId>org.cyk.pom.spring.boot</groupId>
+		<artifactId>pom-spring-boot</artifactId>
+		<version>pom.spring.boot.0.0.1</version>
 	</parent>
 	
 	<groupId>org.cyk.playground.microservices.spring</groupId>
@@ -15,16 +15,7 @@
 	<name>microservices-spring Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 
-	<build>
-		<finalName>microservices-spring</finalName>
-	</build>
-
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
