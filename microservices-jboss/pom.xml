@@ -9,7 +9,7 @@
 	</parent>
 
 	<groupId>org.cyk.playground.microservices.jboss</groupId>
-	<artifactId>microservices-jboss</artifactId>
+	<artifactId>microservices-jboss-swarm-war</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1</version>
 	<name>microservices-jboss Maven Webapp</name>
